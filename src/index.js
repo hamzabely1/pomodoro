@@ -3,35 +3,15 @@ let conatainer = document.createElement("div")
 
 let body = document.getElementById("body")
 
-
-
 body.style.background = "black"
 body.appendChild(conatainer)
 body.style.justifyContent ="center"
-
-
-
-
-
-
-
-
 
 
 let but5 = document.createElement("button")
 but5.style.width="50%"
 but5.style.height = "50px"
 but5.style.background = "red"
-
-
-
-
-
-
-
-
-
-
 
 
 conatainer.style.height ="300px"
@@ -66,9 +46,6 @@ buttonreset.innerHTML ="reset"
 buttonreset.style.marginLeft = "10px"
 
 
-
-
-
 buttonpause.style.height="30px"
 buttonpause.style.width ="80px"
 buttonpause.style.background ="red"
@@ -77,12 +54,9 @@ buttonpause.style.marginTop ="5px"
 buttonpause.innerHTML ="pause"
 buttonpause.style.marginLeft = "10px"
 
-
-
 body.appendChild(buttonstart)
 body.appendChild(buttonpause)
 body.appendChild(buttonreset)
-
 
 let m = 25
 let s = 59
@@ -90,11 +64,7 @@ let s = 59
 
 let ora = document.createElement("p")
 
-
-
 conatainer.appendChild(ora)
-
-
 
 ora.innerHTML =m +":"+s
 ora.style.fontSize ="80px"
@@ -103,8 +73,6 @@ body.appendChild(img)
 img.src = "f.png"
 img.style.height ="250px"
 img.style.width ="300px"
-
-
 
 buttonstart.addEventListener("click",fun)
   
@@ -132,10 +100,6 @@ function fun() {
     s = 60
     m =25
     clearInterval(setin)
-
-    
-    
-  
     body.style.background ="green"
     if (body.style.background == "green") {
       body.style.background ="red"
@@ -144,13 +108,7 @@ function fun() {
   
       }
     }
-
-
-
   }
-
-
-  
     }
   
 buttonpause.addEventListener("click",stop)
@@ -158,10 +116,6 @@ buttonpause.addEventListener("click",stop)
 function stop() {
   clearInterval(setin)
   img.src = "f.png"
-
-
-
-
 }
 
 }
